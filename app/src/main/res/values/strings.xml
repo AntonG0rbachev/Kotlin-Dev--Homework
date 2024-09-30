@@ -4,4 +4,17 @@
     <string name="multiplicationSign">*</string>
     <string name="minusSign">-</string>
     <string name="plusSign">+</string>
+    <string name="numberZeroStr">0</string>
+    <string name="numberOneStr">1</string>
+    <string name="numberTwoStr">2</string>
+    <string name="numberThreeStr">3</string>
+    <string name="numberFourStr">4</string>
+    <string name="numberFiveStr">5</string>
+    <string name="numberSixStr">6</string>
+    <string name="numberSevenStr">7</string>
+    <string name="numberEightStr">8</string>
+    <string name="numberNineStr">9</string>
+    <string name="equalsSign">=</string>
+    <string name="clearButtonText">AC</string>
+    <string name="floatDot">,</string>
 </resources>
