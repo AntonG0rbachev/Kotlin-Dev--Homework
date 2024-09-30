@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Kotlin-Dev—Homework</string>
+    <string name="divisionSign">/</string>
+    <string name="multiplicationSign">*</string>
+    <string name="minusSign">-</string>
+    <string name="plusSign">+</string>
 </resources>
