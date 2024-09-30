@@ -183,9 +183,9 @@
         android:id="@+id/btnComma"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:backgroundTint="#74000000"
         android:text="@string/floatDot"
         android:textSize="30sp"
-        android:backgroundTint="#8B000000"
         app:layout_constraintStart_toEndOf="@+id/btn0"
         app:layout_constraintTop_toTopOf="@+id/btn0" />
 
@@ -215,7 +215,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="4dp"
         android:autoText="false"
-        android:backgroundTint="#8B000000"
+        android:backgroundTint="#74000000"
         android:text="@string/clearButtonText"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
