@@ -16,5 +16,6 @@
     <string name="numberNineStr">9</string>
     <string name="equalsSign">=</string>
     <string name="clearButtonText">AC</string>
-    <string name="floatDot">,</string>
+    <string name="floatDot">.</string>
+    <string name="backspaceSign"><![CDATA[<=]]></string>
 </resources>
