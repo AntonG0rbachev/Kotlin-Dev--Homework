@@ -1,6 +1,7 @@
 package com.example.kotlin_dev__homework
 
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -120,15 +121,25 @@ class MainActivity : AppCompatActivity() {
         buttonAC.setOnClickListener {
             etInputBottom.setText("")
         }
+
+        val buttonBackspace = findViewById<Button>(R.id.backspaceBtn)
+        buttonBackspace.setOnClickListener {
+            val inputBarText: String = etInputBottom.text.toString()
+            etInputBottom
+                .setText(
+                    inputBarText
+                        .dropLast(1)
+                )
+        }
     }
 
-    private fun resolve(var1: String, operation: String, var2: String): String {
+    private fun resolve(firstTerm: String, operation: String, secondTerm: String): String {
         val result = when (operation) {
-            "+" -> var1.toDouble() + var2.toDouble()
-            "-" -> var1.toDouble() - var2.toDouble()
-            "*" -> var1.toDouble() * var2.toDouble()
+            "+" -> firstTerm.toDouble() + secondTerm.toDouble()
+            "-" -> firstTerm.toDouble() - secondTerm.toDouble()
+            "*" -> firstTerm.toDouble() * secondTerm.toDouble()
             "/" -> {
-                if (var2.toDouble() == 0.0) {
+                if (secondTerm.toDouble() == 0.0) {
                     Toast.makeText(
                         this,
                         "Деление на ноль!",
@@ -136,7 +147,7 @@ class MainActivity : AppCompatActivity() {
                     ).show()
                     ""
                 } else {
-                    var1.toDouble() / var2.toDouble()
+                    firstTerm.toDouble() / secondTerm.toDouble()
                 }
             }
             else -> {
