@@ -1,5 +1,6 @@
 package com.example.kotlin_dev__homework
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -8,6 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -84,8 +86,8 @@ class MainActivity : AppCompatActivity() {
                             etInputBottom.setText("")
                             if (btn == R.id.btnEqu) {
                                 etInputTop.setText("")
-                                etInputMiddle.setText("")
-                                etInputBottom.setText(result)
+                                etInputBottom.setText("")
+                                etInputMiddle.setText("answer is $result")
                             }
                         }
                     }
