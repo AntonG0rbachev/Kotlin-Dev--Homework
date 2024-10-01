@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity() {
                             if (btn == R.id.btnEqu) {
                                 etInputTop.setText("")
                                 etInputMiddle.setText("")
-                                etInputBottom.setText("answer is $result")
+                                etInputBottom.setText(result)
                             }
                         }
                     }
