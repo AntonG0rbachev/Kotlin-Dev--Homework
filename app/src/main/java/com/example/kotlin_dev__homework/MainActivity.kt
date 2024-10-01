@@ -2,7 +2,6 @@ package com.example.kotlin_dev__homework
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -29,13 +28,13 @@ class MainActivity : AppCompatActivity() {
             R.id.btn7,
             R.id.btn8,
             R.id.btn9,
-            R.id.btnComma
+            R.id.btnDot
         )
         var currentText: String
         for (btn in arrayOfNumberDigits) {
             val currentButton = findViewById<Button>(btn)
             currentButton.setOnClickListener {
-                if (btn == R.id.btnComma){
+                if (btn == R.id.btnDot){
                     if (etInputBottom.text.isBlank()){
                         etInputBottom.setText("0.")
                     }
