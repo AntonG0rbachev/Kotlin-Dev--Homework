@@ -1,0 +1,2 @@
+Для доступа в интернет через консоль GIT необходимо прописать следующую команду:
+git config --global http.proxy http://proxy.fpm.edu:8080
